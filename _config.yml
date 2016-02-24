@@ -61,10 +61,19 @@
 
 source:       .
 destination:  ./_site
+#page_dir:      ./_pages
 include:      ['_pages']
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      type: 'info'
 
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 detach:  false
-port:    9000
+port:    9001
 host:    127.0.0.1
 baseurl: "" # does not include hostname

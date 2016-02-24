@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 html {
-  background: #6C7989;
-  background: #6c7989 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c7989), color-stop(100%, #434b55)) fixed;
-  background: #6c7989 -webkit-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -moz-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -o-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -ms-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 linear-gradient(#6c7989, #434b55) fixed;
+  background: #5062ac;
+  background: #5062ac -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5062ac), color-stop(100%, #fafafc)) fixed;
+  background: #5062ac -webkit-linear-gradient(#5062ac, #fafafc) fixed;
+  background: #5062ac -moz-linear-gradient(#5062ac, #fafafc) fixed;
+  background: #5062ac -o-linear-gradient(#5062ac, #fafafc) fixed;
+  background: #5062ac -ms-linear-gradient(#5062ac, #fafafc) fixed;
+  background: #5062ac linear-gradient(#5062ac, #fafafc) fixed;
 }
 
 body {
@@ -57,16 +57,16 @@ header {
   -ms-border-radius: 8px 8px 0 0;
   -o-border-radius: 8px 8px 0 0;
   border-radius: 8px 8px 0 0;
-  background: #C6EAFA;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ddfbfc), color-stop(100%, #c6eafa));
-  background: -webkit-linear-gradient(#ddfbfc, #c6eafa);
-  background: -moz-linear-gradient(#ddfbfc, #c6eafa);
-  background: -o-linear-gradient(#ddfbfc, #c6eafa);
-  background: -ms-linear-gradient(#ddfbfc, #c6eafa);
-  background: linear-gradient(#ddfbfc, #c6eafa);
+  background: #e7e9f4;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d0d1db), color-stop(100%, #e7e9f4));
+  background: -webkit-linear-gradient(#d0d1db, #e7e9f4);
+  background: -moz-linear-gradient(#d0d1db, #e7e9f4);
+  background: -o-linear-gradient(#d0d1db, #e7e9f4);
+  background: -ms-linear-gradient(#d0d1db, #e7e9f4);
+  background: linear-gradient(#d0d1db, #e7e9f4);
   position: relative;
   padding: 15px 20px;
-  border-bottom: 1px solid #B2D2E1;
+  border-bottom: 1px solid #e7e9f4;
 }
 header h1 {
   margin: 0;
@@ -288,7 +288,7 @@ footer {
   width: 640px;
   margin: 0 auto;
   padding: 20px 0 0;
-  color: #ccc;
+  color: #eee;
   overflow: hidden;
 }
 footer a {
