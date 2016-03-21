@@ -1,5 +1,7 @@
 ---
 title: Python
+category: info
+tags: python
 ---
 
 # SCIRun Python API 0.2

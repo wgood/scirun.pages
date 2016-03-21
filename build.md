@@ -1,5 +1,7 @@
 ---
 title: Build
+category: info
+tags: build
 ---
 
 # [Contents](#user-content-scirun-5-prototype "generated with DocToc(http://doctoc.herokuapp.com/)")

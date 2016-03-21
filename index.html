@@ -38,8 +38,8 @@ efficient middle layer, with support for Python scripting.</p>
 
         <ul>
         {% for page in site.pages %}
-          {% if page.type == "info" %}
-           <h3> <a href={{ page.url }}>{{ page.title }}</a> </h3>
+          {% if page.category == "info" %}
+           <h3> <a href={{ site.github.url }}{{ page.url }}>{{ page.title }}</a> </h3>
           {% endif %}
         {% endfor %}
         </ul>
