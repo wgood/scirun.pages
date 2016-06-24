@@ -27,23 +27,23 @@ tags: build
   - Tested on 10.8 - 10.11
   - Apple clang 5.1 or newer
   - Qt 4.8
-    + Download from http://releases.qt-project.org/qt4/source/qt-mac-opensource-4.8.4.dmg.
+    + Download [Qt 4.8 DMG](http://releases.qt-project.org/qt4/source/qt-mac-opensource-4.8.4.dmg).
 
 #### Windows
   - Tested on Windows 7-10
   - Visual Studio 2013
   - Qt 4.8
-    + Build from source, but be sure to download http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.4.tar.gz and build in ***64-bit mode***.
+    + Build from source, but be sure to download the [Qt 4.8 source archive](http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.4.tar.gz) and build in ***64-bit mode***.
 
 #### Linux
   - Tested on Ubuntu 14.04 LTS, OpenSUSE Leap 42.1
   - gcc 4.8
   - Qt 4.8
-    + Build from source (http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.4.tar.gz), or use system libraries if available.
+    + Build from the [Qt 4.8 source archive](http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.4.tar.gz) , or use system libraries if available.
 
 #### All Platforms
-  - CMake (platform independent configuring system that is used for generating Makefiles, Visual Studio project files, or Xcode project files)
-    + Tested with 2.8 or newer
+  - [CMake](https://cmake.org/) (platform independent configuring system that is used for generating Makefiles, Visual Studio project files, or Xcode project files)
+    + Tested with 2.8 - 3.4
     + Root cmake file is Superbuild/CMakeLists.txt.
     + Building in source directories is not permitted.
     + Make sure BUILD_SHARED_LIBS is on (default setting).
