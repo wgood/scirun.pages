@@ -4,9 +4,7 @@ category: info
 tags: build
 ---
 
-# [Contents](#user-content-scirun-5-prototype "generated with DocToc(http://doctoc.herokuapp.com/)")
-
-- [SCIRun 5](#scirun-5)
+- [Build Instructions](#build-instructions)
 	- [Platform Notes](#platform-notes)
 		- [Build requirements](#build-requirements)
           - [OS X](#os-x)
