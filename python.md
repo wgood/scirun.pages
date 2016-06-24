@@ -1,39 +1,40 @@
 ---
-title: Python
+title: Python API 0.2
 category: info
 tags: python
 ---
 
-# SCIRun Python API 0.2
-
 The API contains global functions for network editing, file management, module state modification, and data object extraction and insertion.
 
+Some functions are not available for execution within the `InterfaceWithPython` module, since they are not useful in that context and can cause instability. They are marked with a (*).
+
 ## Global functions
+
 ### Network editing
 * `scirun_add_module("ModuleName")`
-  * Adds a new instance of a module to the network. Returns the module ID as a string.
+  * Adds a new instance of a module to the network. Returns the module ID as a string. (*)
 * `scirun_remove_module("ModuleID")`
-  * Removes the module specified by the ID string.
+  * Removes the module specified by the ID string. (*)
 * `scirun_execute_all()`
-  * Executes the entire current network.
+  * Executes the entire current network. (*)
 * `scirun_module_ids()`
-  * Returns a list of all module ID strings in the current network.
+  * Returns a list of all module ID strings in the current network, sorted by module creation time.
 * `scirun_connect_modules("ModuleIDFrom", fromIndex, "ModuleIDTo", toIndex)`
-  * Connects ports between two modules by index. From is the output, To is the input. 
+  * Connects ports between two modules by index. From is the output, To is the input. (*)
 * `scirun_disconnect_modules("ModuleIDFrom", fromIndex, "ModuleIDTo", toIndex)`
-  * Used to disconnect two modules, with the same syntax as connecting.
+  * Used to disconnect two modules, with the same syntax as connecting. (*)
 
 ### Network file management
 * `scirun_save_network("Filename.srn5")`
-  * Saves the current network file.
+  * Saves the current network file. (*)
 * `scirun_load_network("Filename.srn5")`
-  * Loads the specified network file.
+  * Loads the specified network file. (*)
 * `scirun_import_network("Filename.srn")`
-  * Imports the specified v4 network file.
-* `scirun_quit()`
-  * Enables quitting SCIRun after the next network execution is complete.
+  * Imports the specified v4 network file. (*)
+* `scirun_quit_after_execute()`
+  * Enables quitting SCIRun after the next network execution is complete. (*)
 * `scirun_force_quit()`
-  * Quits SCIRun immediately.
+  * Quits SCIRun immediately. (*)
 
 ### Module state editing
 * `scirun_get_module_state("ModuleID", "StateVariableName")`
@@ -73,21 +74,37 @@ The API contains global functions for network editing, file management, module s
 There are many ways to install packages in python. pip is an easy way that is usually included with python.
 
 ### Installing pip
-if pip is not installed for the scirun installation of python, follow these directions: https://pip.pypa.io/en/stable/installing/.  Be sure to use the python in `"scirun_root"/bin/Externals/Install/Python_external/bin/`
+If pip is not installed for the scirun installation of python, follow these [directions](https://pip.pypa.io/en/stable/installing/).
+
+Be sure to use the python in
+
+* `"scirun_root"/bin/Externals/Install/Python_external/bin/`
+
+or in the Mac OS X app bundle in
+
+* `SCIRun.app/Contents/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages`.
 
 ### Installing numpy, scipy, and other major packages
-* make sure that pip is installed
-* in the terminal:
-  * `cd "scirun_root"/bin/Externals/Install/Python_external/bin/`
-  * `./python3 -m pip install numpy`
+Make sure that pip is installed.
+
+Run in the terminal:
+
+```
+cd "scirun_root"/bin/Externals/Install/Python_external/bin/
+./python3 -m pip install numpy
+```
 
 ### Installing Matlab engine for python in SCIRun
-in the terminal:
-  * `cd "matlab_root"/extern/engines/python`
-  * `"scirun_root"/bin/Externals/Install/Python_external/bin/python3.4 setup.py build --build-base="builddir" install --prefix="installdir"`
+Run in the terminal:
 
-Full instructions are located at http://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html
+```
+cd "matlab_root"/extern/engines/python
+"scirun_root"/bin/Externals/Install/Python_external/bin/python3.4 setup.py build --build-base="builddir" install --prefix="installdir"
+```
+
+Full installation instructions are located [on the mathworks site](http://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html).
   
 ## Matlab engine in SCIRun 5 (through python)
 
-In SCIRun 5, Matlab code and functions can be run using the matlab engine for python in the python console or python interface.  To do so, make sure that the matlab engine is installed (previous section). Full documentation found at http://www.mathworks.com/help/matlab/matlab-engine-for-python.html
+In SCIRun 5, Matlab code and functions can be run using the matlab engine for python in the python console or python interface.  To do so, make sure that the matlab engine is installed (previous section).
+Full documentation can be found [here](http://www.mathworks.com/help/matlab/matlab-engine-for-python.html).
