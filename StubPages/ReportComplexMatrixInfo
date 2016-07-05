@@ -1,0 +1,20 @@
+---
+title: ReportComplexMatrixInfo
+category: Complex
+tags: Math
+---
+
+
+## ReportComplexMatrixInfo
+
+#### Information
+  - Package: SCIRun
+  - Category: Complex
+  - Status: Supported in latest version
+  - Version: 5.0
+
+
+
+#### Description
+##### Summary
+ - Enables report field info on complex data such that complex analytics can be performed. 

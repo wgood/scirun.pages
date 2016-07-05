@@ -1,0 +1,23 @@
+---
+title: ConvertScalarToMatrix
+category: Matrix
+tags: Converters
+---
+
+
+## ConvertScalarToMatrix
+
+#### Information
+  - Package: SCIRun
+  - Category: 
+  - Status: Supported in latest version
+  - Version: 5.0
+
+
+
+#### Description
+
+##### Summary
+ - Takes a scalar data value and converts it to a 1x1 matrix. 
+
+##### Detailed Description

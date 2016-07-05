@@ -1,0 +1,23 @@
+---
+title: CalculateNodeLocationFrequency
+category: NewField
+tags: Field
+---
+
+
+## CalculateNodeLocationFrequency
+
+#### Information
+  - Package: SCIRun
+  - Category: NewField
+  - Status: Supported in latest version
+  - Version: 5.0
+
+
+
+#### Description
+
+##### Summary
+ -Only Point Clouds are supported at this time. 
+ -A Description of this module is not available at this time. For assistance please contact scirun-users@sci.utah.edu. 
+##### Detailed Description
